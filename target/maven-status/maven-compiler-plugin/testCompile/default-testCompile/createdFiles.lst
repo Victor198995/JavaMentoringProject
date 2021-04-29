@@ -1,0 +1,5 @@
+serenity\bdd\EnvironmentPropertyLoader.class
+serenity\bdd\steps\JBehave\SwaggerAllTests.class
+serenity\bdd\AcceptanceTestSuite.class
+serenity\bdd\SwaggerTest.class
+serenity\bdd\steps\EndUserSteps.class

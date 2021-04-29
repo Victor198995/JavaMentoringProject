@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 10.949 s <<< FAILURE! - in TestSuite
+deleteOrderByID(serenity.bdd.SwaggerTest)  Time elapsed: 2.014 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at serenity.bdd.SwaggerTest.deleteOrderByID(SwaggerTest.java:61)
+
+getInventory(serenity.bdd.SwaggerTest)  Time elapsed: 0.971 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path scary doesn't match.
+Expected: <4>
+  Actual: null
+
+	at serenity.bdd.SwaggerTest.getInventory(SwaggerTest.java:19)
+

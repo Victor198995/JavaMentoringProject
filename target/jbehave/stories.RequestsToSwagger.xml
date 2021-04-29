@@ -1,0 +1,36 @@
+<story path="stories/RequestsToSwagger.story" title="Lookup a definition">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">talk better</inOrderTo>
+  <asA keyword="As a">n English student</asA>
+  <iWantTo keyword="I want to">look up word definitions</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="I can see the all inventory">
+<step outcome="successful">Given I have an endpoint <parameter>/store/inventory</parameter></step>
+<step outcome="successful">When I perform a GET request to endpoint</step>
+<step outcome="successful">Then I verify that status code is &apos;200&apos;</step>
+<step outcome="failed" keyword="FAILED">Then I check that Inventory response body contains value <parameter>200</parameter><failure>java.lang.NullPointerException</failure></step>
+<failure>java.lang.NullPointerException
+	at io.restassured.path.json.JsonPath.getInt(JsonPath.java:245)
+	at serenity.bdd.steps.JBehave.SwaggerAllTests.checkingJsonBody(SwaggerAllTests.java:95)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:825)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:356)
+...</failure>
+</scenario>
+<scenario keyword="Scenario:" title="I can create new order">
+<step outcome="successful">Given I have an endpoint <parameter>/store/order</parameter></step>
+<step outcome="successful">When I perform a POST request to endpoint</step>
+<step outcome="successful">Then I verify that status code is &apos;200&apos;</step>
+<step outcome="successful">Then I check that NewOrder response body contains value <parameter>placed</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="I can see the particular order by orderID">
+<step outcome="successful">Given I have an endpoint <parameter>/store/order/2</parameter></step>
+<step outcome="successful">When I perform a GET request to endpoint</step>
+<step outcome="successful">Then I verify that status code is &apos;200&apos;</step>
+</scenario>
+<scenario keyword="Scenario:" title="I can delete the particular order by orderID">
+<step outcome="successful">Given I have an endpoint <parameter>/store/order/2</parameter></step>
+<step outcome="successful">When I perform a DELETE request to inventory endpoint</step>
+<step outcome="successful">Then I verify that status code is &apos;200&apos;</step>
+</scenario>
+</story>

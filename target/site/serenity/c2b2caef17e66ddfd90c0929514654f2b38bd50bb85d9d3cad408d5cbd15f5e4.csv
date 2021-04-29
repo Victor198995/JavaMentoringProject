@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Lookup a definition","I can see the all inventory","SUCCESS","2019-12-13T10:43:49.721+02:00[Europe/Helsinki]","0.0","0.86"
+"Lookup a definition","I can create new order","ERROR","2019-12-13T10:43:50.625+02:00[Europe/Helsinki]","0.0","0.74"
+"Lookup a definition","I can see the particular order by orderID","SUCCESS","2019-12-13T10:43:51.439+02:00[Europe/Helsinki]","0.0","0.7"
+"Lookup a definition","I can delete the particular order by orderID","FAILURE","2019-12-13T10:43:52.139+02:00[Europe/Helsinki]","0.0","0.71"

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Lookup a definition" skipped="0" tests="4" time="3.98" timestamp="2021-03-30 10:22:06"><testcase name="I can see the all inventory"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+io.restassured.path.json.JsonPath.getInt(JsonPath.java:245)&#13;
+serenity.bdd.steps.JBehave.SwaggerAllTests.checkingJsonBody(SwaggerAllTests.java:95)&#13;
+</system-err></testcase><testcase name="I can create new order"/><testcase name="I can see the particular order by orderID"/><testcase name="I can delete the particular order by orderID"/></testsuite>

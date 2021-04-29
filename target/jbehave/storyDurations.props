@@ -1,0 +1,7 @@
+#org.jbehave.core.embedder.StoryManager
+#Tue Mar 30 10:22:11 EEST 2021
+stories/RequestsToSwagger.story=4000
+threads=1
+total=4000
+threadAverage=4000
+stories/consult_dictionary/LookupADefinition.story=0
